@@ -1,11 +1,11 @@
-# rock-paper-scissors
+# find-replace
 
-As in the game
+find text in a string and replace that text with another user-specified string
 
 ## The method 
 
-The method `beats?()` is called on one player's play, and the other player's play is taken by that method as an ~~argument~~ parameter.
+The method `find-replace(<find>, <replace with>)` is called on the string of text to be searched, and takes two arguments as parameters. The first is the text to be found, the second is what it will be replaced with.
 
 ## The site
 
-Players enter their plays as either `player 1` or `player 2` on the (/plays) page. Clicking submit, will direct you to the (/outcome) page where you can find out who won.
+The user will input information into three fields. The first field is for the text to be searched. The second is for the text to be found within that string. The third is the text that will replace the found text. Upon clicking submit, the `find-replace()` method will be called on the three fields, and the resulting text will be displayed.
