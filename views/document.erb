@@ -1,13 +1,5 @@
-<h1>Who won?</h1>
-<% if @result.==(true) %>
-  <p>Player 1 with <%= @player_1.piece %></p>
-<% elsif @result.==(false) %>
-  <p>Player 2 with <%= @player_2.piece %></p>
-<% elsif @result.==('tie') %>
-  <p>It was a tie</p>
-<% elsif @result.==('invalid') %>
-  <p>please choose "rock" "paper", or "scissors"</p>
-<% end %>
-<form action='/game'>
-  <button type='submit' class='btn'>Play Again</button>
+<h1>Edited text</h1>
+<%= @edited_text %>
+<form action='/form'>
+  <button type='submit' class='btn'>Try Again</button>
 </form>

@@ -1,14 +1,22 @@
-<h1>Rock, Paper, Scissors</h1>
-<h2>Please enter an entry of 'rock,' 'paper, or 'scissors' for both players</h2>
-<form action='/result'>
+<h1>Find and Replace</h1>
+<ol>
+  <li>Field #1 enter some text to be searched</li>
+  <li>Field #2 enter the word you would like to replace in field #1</li>
+  <li>Filed #3 enter the word you would like to replace it with</li>
+</ol>
+<form action='/document'>
   <div class='form-group'>
-    <label for='player_1'>Player 1</label>
-    <input id='player_1' name='player_1' class='form-control' type='text'>
+    <!-- <label for='text'>To be searched</label> -->
+    <input id='text' name='text' class='form-control' type='text' rows='3' placeholder='To be searched'>
   </div>
   <div class='form-group'>
-    <label for='player_2'>Player 2</label>
-    <input id='player_2' name='player_2' class='form-control' type='text'>
+    <!-- <label for='word'>Word to be replaced</label> -->
+    <input id='word' name='word' class='form-control' type='text' placeholder='Word to be replaced'>
+  </div>
+  <div class='form-group'>
+    <!-- <label for='replace_with'>Word to replace it with</label> -->
+    <input id='replace_with' name='replace_with' class='form-control' type='text' placeholder='Word to replace it with'>
   </div>
 
-  <button type='submit' class='btn'>Shoot</button>
+  <button type='submit' class='btn'>Search</button>
 </form>
