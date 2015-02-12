@@ -20,3 +20,5 @@ class String
     end
   end 
 end
+
+# try String#scan
